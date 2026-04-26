@@ -39,11 +39,10 @@ lista.innerHTML+=`
 window.escolherGato = function(id){
 const gato = gatos.find(g=>g.id===id);
 
-document.getElementById("imgGato").src = gato.img;
+document.getElementById("imgGato").src = gato.foto;
 document.getElementById("nomeGato").innerText = gato.nome;
 document.getElementById("idadeGato").innerText = gato.idade;
 document.getElementById("sexoGato").innerText = gato.sexo;
-
 
 mostrar("adocao");
 };
